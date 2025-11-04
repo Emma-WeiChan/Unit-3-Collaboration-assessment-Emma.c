@@ -19,7 +19,7 @@ Our mission is to:
  
  ##### Oak Tree
  
- **Scientific Name**: Quercus robur 
+ **Scientific Name**: *Quercus robur* 
 
  Known for its strength and longevity, the oak is a symbol of endurance.
 
@@ -27,7 +27,7 @@ Our mission is to:
 
  #### Pine Tree 
 
- **Scientific Name**: Pinus
+ **Scientific Name**: *Pinus*
 
  Evergreen and aromatic, pine trees thrive in colder regions.
 
@@ -37,6 +37,22 @@ Our mission is to:
 
  You can use this simple **Javascript** function to identify a tree bys its characteristics.
 
- 
- 
-  
+function identify_tree(leaf_shape, region){
+
+    if (leaf_shape == "needle" && region == "cold"){
+
+        return "Pine Tree"
+
+    } else if (leaf_shape == "broad && region == "temperture"){ 
+
+        return "Oak Tree"
+
+    } else {
+
+        return "Unknown Tree"
+
+    } 
+
+}
+
+console.log(identify_tree("needle", "cold"))
